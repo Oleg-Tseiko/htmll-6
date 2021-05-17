@@ -17,5 +17,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "imagemin-pngquant": "^9.0.1",
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0"
   }
 }
