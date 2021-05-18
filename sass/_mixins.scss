@@ -1,6 +1,7 @@
-@mixin primary-change-font($weight, $size, $height, $color) {
+@mixin change-font($weight, $size, $height, $color, $letter: normal) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
   color: $color;
+  letter-spacing: $letter;
 }

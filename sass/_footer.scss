@@ -1,1 +1,11 @@
-
+.footer-container {
+  background-color: $darker_blue_color;
+  a {
+    padding: 10px;
+    @include change-font(400, 24px, $headline_line_height, $white_color, $primary_letter_spacing);
+    &:hover, &:focus, &:active {
+      color: $light_blue_color;
+      transition: .4s;
+    }
+  }
+}

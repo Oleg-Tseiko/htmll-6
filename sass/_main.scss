@@ -4,15 +4,26 @@
 body {
   margin: 0;
 }
-ul, p {
+ul, p, h2, h3 {
   padding: 0;
   margin: 0;
   li {
     list-style: none;
   }
 }
+a, button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  &:hover, &:focus, &:focus-within, &:visited, &:active {
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+}
 .center_block {
-  margin: auto 0;
+  margin: 0 auto;
+  display: block;
 }
 .no-gutters {
   padding: 0;

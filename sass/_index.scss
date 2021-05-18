@@ -1,0 +1,206 @@
+/* Services section */
+.services-container {
+  background-color: $light_green_color;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
+    padding: 10px 0 15px;
+    text-transform: uppercase;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $underhead_letter_spacing);
+    padding: 5px 0 25px;
+  }
+  .services_columns {
+    h3 {
+      @include change-font(700, 24px, 18px, $white_color, $primary_letter_spacing);
+      padding: 15px 0;
+    }
+    p {
+      @include change-font(300, 16px, 24px, $white_color, $secondary_letter_spacing);
+    }
+  }
+}
+/* Team section */
+.team-container {
+  background-color: $light_silver_color;
+  h2 {
+    @include change-font(700, 41px, 30.87px, $primary_font_color, $headline_letter_spacing);
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+  .under_headline {
+    @include change-font(400, 19px, 26.84px, $primary_font_color, $underhead_letter_spacing);
+    padding: 10px 0;
+  }
+  .team_column {
+    h3 {
+      @include change-font(700, 24px, 18px, $team_position_font_color, $primary_letter_spacing);
+      text-transform: uppercase;
+      padding: 5px 0;
+    }
+    .position {
+      @include change-font(400, 16px, 18px, $light_blue_color, $secondary_letter_spacing);
+      padding-bottom: 15px;
+    }
+    p {
+      @include change-font(300, 16px, 24px, $secondary_font_color);
+    }
+    .link-holder {
+      padding-top: 15px;
+      i {
+        color: $white_color;
+        border-radius: 50%;
+        background-color: $gray_color;
+        font-size: 16px;
+      }
+    }
+  }
+}
+/* Skills section */
+.skills-container {
+  background-color: $white_color;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $primary_font_color, $headline_letter_spacing);
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $primary_font_color, $secondary_letter_spacing);
+    padding: 10px 0 20px;
+  }
+  h3 {
+    @include change-font(700, 24px, 18px, $primary_font_color);
+    padding: 15px 0;
+  }
+}
+/* Portfolio section */
+.portfolio-container {
+  background-color: $yellow_color;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $secondary_font_color, $headline_letter_spacing);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $secondary_font_color, $secondary_letter_spacing);
+    padding: 15px 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .tabs {
+    padding: 15px 0;
+    i {
+      @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color);
+      padding: 5px 10px;
+    }
+  }
+  h3 {
+    @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color, $secondary_letter_spacing);
+    padding: 20px 0;
+    text-transform: uppercase;
+  }
+  button {
+    @include change-font(400, $primary_font_size, 26.19px, $white_color, 0.27px);
+    background-color: $light_green_color;
+    text-transform: uppercase;
+    border: 2px;
+    padding: 20px 20px;
+    width: 30%;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+}
+/* Comments section */
+.comments-container {
+  background-color: $pink_color;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
+    padding: 10px 0;
+  }
+  .comment-holder {
+    .comment-text {
+      @include change-font(400, 21px, 31.2px, $white_color, 0.35px);
+      font-style: italic;
+      padding: 2px 0 5px 10px;
+    }
+    h3 {
+      @include change-font(700, 24px, $primary_line_height, $white_color);
+      padding: 0 0 5px 10px;
+      margin: 0;
+    }
+    p {
+      @include change-font(400, $primary_font_size, $primary_line_height, $yellow_color, $secondary_letter_spacing);
+      padding: 5px 0 5px 10px;
+    }
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}
+/* Contact section */
+.contact-container {
+  background-color: $dark_blue_color;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $white_color);
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  .under_headline {
+    padding: 0 0 20px 0;
+    a {
+      @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
+      padding: 10px 0;
+      &:hover, &:focus, &:active {
+        color: $light_blue_color;
+      }
+    }
+  }
+  textarea, input {
+    background-color: $purple_blue_color;
+    @include change-font(400, $primary_font_size, 18px, $white_color);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    &::placeholder {
+      @include change-font(400, $primary_font_size, 18px, $white_color);
+    }
+  }
+  form {
+    position: relative;
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  input {
+    flex: 0 0 49%;
+    max-width: 49%;
+    padding: 10px;
+    &:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+  textarea {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 10px 0 30px;
+    padding: 10px;
+  }
+  button {
+    @include change-font(400, $primary_font_size, 26.19px, $white_color);
+    background-color: $light_blue_color;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border-radius: 2px;
+    width: 30%;
+    cursor: pointer;
+  }
+}
