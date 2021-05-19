@@ -207,8 +207,8 @@
     margin: 0 auto;
     img {
       position: absolute;
-      bottom: 132px;
-      right: 2px;
+      bottom: 137px;
+      right: 8px;
     }
   }
   input {
@@ -224,6 +224,9 @@
     max-width: 100%;
     margin: 20px 0 60px;
     padding: 10px;
+    &::-webkit-resizer {
+      display: none;
+    }
   }
   button {
     @include change-font(400, $primary_font_size, 26.19px, $white_color);
