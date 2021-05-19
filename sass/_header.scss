@@ -2,21 +2,24 @@
   background-color: $purple_color;
   button {
     background-color: $orange_color;
-    @include change-font(400, $primary_font-size, 26.19px, $white_color, 0.27px);
+    @include change-font(400, $primary_font-size, 26.19px, $white_color, 0.45px);
     text-transform: uppercase;
     padding: 20px 20px;
-    width: 30%;
+    width: 27.13%;
     cursor: pointer;
-    margin-bottom: 80px;
+    margin-bottom: 97px;
   }
 .navbar {
-  padding: 20px 1rem 0;
+  padding: 24px 1rem 0;
+  .navbar-brand {
+    padding: 9px 0 0 30px;
+  }
   .navbar-nav {
     .nav-link {
       @include change-font(400, 16px, 18px, $white_color);
       text-transform: uppercase;
-      padding: 0.5rem 15px;
-      margin: 0 5px;
+      padding: 0.5rem 15px 0.5rem 15px;
+      margin: 0 0 0 14.5px;
       &:hover, &:focus, &:active {
         background-color: $dark_purple_color;
         border-radius: 2px;
@@ -26,6 +29,9 @@
 }
   h2 {
     @include change-font(700, 42px, 48.82px, $main_header_font_color);
-    padding: 100px 5% 50px;
+        padding: 128px 5% 55px;
+    span {
+      margin-left: -9px;
+    }
   }
 }
