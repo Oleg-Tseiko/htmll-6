@@ -95,14 +95,13 @@
     }
     .position {
       @include change-font(400, 16px, 18px, $light_blue_color, 0.62px);
-      padding-bottom: 25px;
+      padding-bottom: 22px;
     }
     p {
       @include change-font(300, 16px, 24px, $secondary_font_color, $secondary_letter_spacing);
-      padding: 0 30px 30px;
+      padding: 0 37px 28px 35px;
     }
     .link-holder {
-      padding-top: 29px;
       i {
         color: $white_color;
         border-radius: 50%;
@@ -111,79 +110,35 @@
         padding: 8px 5px 5px 5px;
         width: 32px;
         height: 32px;
-        margin: 0 -3px 0 11px;
+        margin: 0 3px 0 5px;
       }
     }
-    &:nth-child(1) {
-      img {
-        margin: 0 0 0 14px;
-      }
-      h3 {
-        padding: 34px 0 12px 14px;
-      }
+    &:nth-child(2n-1) {
+      padding-right: 0;
+      padding-left: 16px;
+    }
+    &:nth-child(3n-1) {
+      padding-right: 0;
+      padding-left: 6px;
+    }
+    &:nth-child(4n-1) {
+      padding-right: 5px;
+      padding-left: 0;
       .position {
-        padding: 0 10px 21px 24px;
-      }
-      p {
-        padding: 0 10px 0 24px;
+        padding: 0 35px 23px 35px;
       }
     }
-    &:nth-child(2) {
-      img {
-        margin: 0 0 0 4px;
-      }
+    &:nth-child(5n-1) {
+      padding-right: 16px;
+      padding-left: 0;
       h3 {
-        padding: 34px 0 13px 6px;
+        padding: 34px 0 12px 12px;
       }
       .position {
-        padding: 0 27px 22px 32px;
+        padding: 0 23px 23px 35px;
       }
       p {
-        padding: 0 25px 0 29px;
-      }
-      .link-holder {
-        padding-top: 28px;
-        a {
-        margin: 0 3px 0 -3px;
-        }
-      }
-    }
-    &:nth-child(3) {
-      img {
-        margin: 0 5px 0 0;
-      }
-      h3 {
-        padding: 34px 5px 12px 0;
-      }
-      .position {
-        padding: 0 37px 22px 32px
-      }
-      p {
-        padding: 0 27px 0 22px
-      }
-      .link-holder {
-        i {
-        margin: 0 5px 0 3px;
-        }
-      }
-    }
-    &:nth-child(4) {
-      img {
-        margin: 0 16px 0 0;
-      }
-      h3 {
-        padding: 34px 5px 12px 0;
-      }
-      .position {
-        padding: 0 36px 22px 32px;
-      }
-      p {
-        padding: 0 26px 0 22px;
-      }
-      .link-holder {
-        i {
-          margin: 0 12px 0 -3px;
-        }
+        padding: 0 23px 28px 35px;
       }
     }
   }
@@ -191,6 +146,7 @@
 /* Skills section */
 .skills-container {
   background-color: $white_color;
+  padding-bottom: 53px;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $primary_font_color, $headline_letter_spacing);
     padding: 92px 0 14px 5px;
@@ -220,6 +176,9 @@
     &:nth-child(4n-1) {
       padding-right: 7px;
       padding-left: 0;
+      h3 {
+        letter-spacing: 0.45px;
+      }
     }
     &:nth-child(5n-1) {
       padding-right: 16px;
@@ -230,9 +189,10 @@
 /* Portfolio section */
 .portfolio-container {
   background-color: $yellow_color;
+  padding-bottom: 49px;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $secondary_font_color, $headline_letter_spacing);
-    padding: 90px 0 10px;
+    padding: 95px 0 13px 5px;
     text-transform: uppercase;
   }
   .gray-line {
@@ -240,7 +200,7 @@
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $secondary_font_color, $secondary_letter_spacing);
-    padding: 10px 23% 10px;
+    padding: 10px 23% 13px;
   }
   img {
     width: 100%;
@@ -250,13 +210,28 @@
     padding: 35px 0 70px;
     a {
       @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color);
-      padding: 5px 20px;
+      padding: 5px 20px 6px;
       text-transform: uppercase;
       background-color: $black_color_withop;
       border-radius: 2px;
-      margin: 0 3px;
+      margin: 0 5px 0 6px;
       &:hover, &:active, &:focus {
         background-color: $white_color;
+      }
+      &:nth-child(1) {
+        padding: 5px 27px 6px 27px;
+        margin: 0 0 0 8px;
+      }
+      &:nth-child(2) {
+        padding: 5px 22px 6px 22px;
+        margin: 0 0 0 9px;
+      }
+      &:nth-child(3) {
+        padding: 5px 23px 6px 22px;
+        margin: 0 5px 0 9px;
+      }
+      &:nth-child(4) {
+        margin: 0 6px 0 5px;
       }
     }
   }
@@ -269,10 +244,35 @@
     @include change-font(400, $primary_font_size, 26.19px, $white_color, 0.27px);
     background-color: $light_green_color;
     text-transform: uppercase;
-    padding: 20px 20px;
-    width: 30%;
-    margin: 30px auto 60px;
+    padding: 22px 20px 18px 25px;
+    width: 25.72%;
+    margin: 21px auto 60px;
     cursor: pointer;
+  }
+  .portfolio_columns {
+    &:nth-child(2n-1) {
+      padding-left: 21px;
+      padding-right: 9px;
+      h3 {
+        padding: 22px 0 60px;
+      }
+    }
+    &:nth-child(2n) {
+      padding: 3px 19px 0 11px;
+      h3 {
+        padding: 20px 5px 60px 0;
+      }
+    }
+    &:nth-child(4n-1) {
+      h3 {
+        padding: 24px 18px 60px 0;
+      }
+    }
+    &:nth-child(4n) {
+      h3 {
+        padding: 20px 0 60px 16px;
+      }
+    }
   }
 }
 /* Comments section */
@@ -281,31 +281,47 @@
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
     text-transform: uppercase;
-    padding: 90px 0 10px;
+    padding: 94px 0 14px 5px;
   }
   .gray-line {
     opacity: 0.15;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
-    padding: 10px 23% 70px;
+    padding: 10px 23% 65px;
   }
   .comment-holder {
     .comment-text {
       @include change-font(400, 21px, 31.2px, $white_color, 0.35px);
       font-style: italic;
-      padding: 2px 55px 5px 25px;
+      padding: 2px 31px 5px 49px;
     }
     h3 {
       @include change-font(700, 24px, $primary_line_height, $white_color);
-      padding: 10px 55px 5px 25px;
+      padding: 17px 31px 5px 49px;
+      text-transform: uppercase;
     }
     p {
       @include change-font(400, $primary_font_size, $primary_line_height, $yellow_color, $secondary_letter_spacing);
-      padding: 0 55px 10px 25px;
+      padding: 0 31px 10px 49px;
     }
     &:last-child {
       margin-bottom: 40px;
+    }
+  }
+  .comments-column {
+    padding: 0 0 89px 21px;
+    &:nth-child(2n) {
+      padding-left: 39px;
+    }
+    &:nth-child(4n) {
+      padding-left: 40px;
+    }
+    &:last-child {
+      padding-bottom: 75px;
+    }
+    &:nth-last-child(2) {
+      padding-bottom: 75px;
     }
   }
 }
