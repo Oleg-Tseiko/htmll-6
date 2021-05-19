@@ -1,22 +1,28 @@
 /* Services section */
 .services-container {
   background-color: $light_green_color;
+  padding-bottom: 120px;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
-    padding: 10px 0 15px;
+    padding: 80px 0 15px;
     text-transform: uppercase;
+  }
+  .gray-line {
+    opacity: 0.15;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $underhead_letter_spacing);
-    padding: 5px 0 25px;
+    padding: 10px 23% 90px;
   }
   .services_columns {
     h3 {
       @include change-font(700, 24px, 18px, $white_color, $primary_letter_spacing);
-      padding: 15px 0;
+      padding: 50px 0 20px;
+      text-transform: uppercase;
     }
     p {
       @include change-font(300, 16px, 24px, $white_color, $secondary_letter_spacing);
+      padding: 0 25px;
     }
   }
 }
@@ -25,25 +31,30 @@
   background-color: $light_silver_color;
   h2 {
     @include change-font(700, 41px, 30.87px, $primary_font_color, $headline_letter_spacing);
-    padding: 10px 0;
+    padding: 80px 0 20px;
     text-transform: uppercase;
+  }
+  .gray-line {
+    background-color: #bdd1df;
+    opacity: 0.75;
   }
   .under_headline {
     @include change-font(400, 19px, 26.84px, $primary_font_color, $underhead_letter_spacing);
-    padding: 10px 0;
+     padding: 15px 15% 90px;
   }
   .team_column {
     h3 {
       @include change-font(700, 24px, 18px, $team_position_font_color, $primary_letter_spacing);
       text-transform: uppercase;
-      padding: 5px 0;
+      padding: 40px 0 20px;
     }
     .position {
       @include change-font(400, 16px, 18px, $light_blue_color, $secondary_letter_spacing);
-      padding-bottom: 15px;
+      padding-bottom: 25px;
     }
     p {
       @include change-font(300, 16px, 24px, $secondary_font_color);
+      padding: 0 30px 30px;
     }
     .link-holder {
       padding-top: 15px;
@@ -61,16 +72,19 @@
   background-color: $white_color;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $primary_font_color, $headline_letter_spacing);
-    padding: 10px 0;
+    padding: 90px 0 20px;
     text-transform: uppercase;
+  }
+  .gray-line {
+    background-color: #dfe8ed;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $primary_font_color, $secondary_letter_spacing);
-    padding: 10px 0 20px;
+    padding: 10px 23% 70px;
   }
   h3 {
     @include change-font(700, 24px, 18px, $primary_font_color);
-    padding: 15px 0;
+    padding: 25px 0 70px;
   }
 }
 /* Portfolio section */
@@ -78,37 +92,46 @@
   background-color: $yellow_color;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $secondary_font_color, $headline_letter_spacing);
-    padding-bottom: 10px;
+    padding: 90px 0 10px;
     text-transform: uppercase;
+  }
+  .gray-line {
+    background-color: #e5c37f;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $secondary_font_color, $secondary_letter_spacing);
-    padding: 15px 0;
+    padding: 10px 23% 10px;
   }
   img {
     width: 100%;
     height: auto;
   }
   .tabs {
-    padding: 15px 0;
-    i {
+    padding: 35px 0 70px;
+    a {
       @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color);
-      padding: 5px 10px;
+      padding: 5px 20px;
+      text-transform: uppercase;
+      background-color: $black_color_withop;
+      border-radius: 2px;
+      margin: 0 3px;
+      &:hover, &:active, &:focus {
+        background-color: $white_color;
+      }
     }
   }
   h3 {
     @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color, $secondary_letter_spacing);
-    padding: 20px 0;
+    padding: 20px 0 60px;
     text-transform: uppercase;
   }
   button {
     @include change-font(400, $primary_font_size, 26.19px, $white_color, 0.27px);
     background-color: $light_green_color;
     text-transform: uppercase;
-    border: 2px;
     padding: 20px 20px;
     width: 30%;
-    margin-top: 40px;
+    margin: 30px auto 60px;
     cursor: pointer;
   }
 }
@@ -118,26 +141,28 @@
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 90px 0 10px;
+  }
+  .gray-line {
+    opacity: 0.15;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
-    padding: 10px 0;
+    padding: 10px 23% 70px;
   }
   .comment-holder {
     .comment-text {
       @include change-font(400, 21px, 31.2px, $white_color, 0.35px);
       font-style: italic;
-      padding: 2px 0 5px 10px;
+      padding: 2px 55px 5px 25px;
     }
     h3 {
       @include change-font(700, 24px, $primary_line_height, $white_color);
-      padding: 0 0 5px 10px;
-      margin: 0;
+      padding: 10px 55px 5px 25px;
     }
     p {
       @include change-font(400, $primary_font_size, $primary_line_height, $yellow_color, $secondary_letter_spacing);
-      padding: 5px 0 5px 10px;
+      padding: 0 55px 10px 25px;
     }
     &:last-child {
       margin-bottom: 40px;
@@ -147,13 +172,17 @@
 /* Contact section */
 .contact-container {
   background-color: $dark_blue_color;
+  padding-bottom: 110px;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $white_color);
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 90px 0 10px;
+  }
+  .gray-line {
+    background-color: #273a71;
   }
   .under_headline {
-    padding: 0 0 20px 0;
+    padding: 10px 15% 70px;
     a {
       @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
       padding: 10px 0;
@@ -174,15 +203,17 @@
   }
   form {
     position: relative;
+    max-width: 80%;
+    margin: 0 auto;
     img {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 132px;
+      right: 2px;
     }
   }
   input {
-    flex: 0 0 49%;
-    max-width: 49%;
+    flex: 0 0 48.5%;
+    max-width: 48.5%;
     padding: 10px;
     &:nth-child(2) {
       margin-left: auto;
@@ -191,7 +222,7 @@
   textarea {
     flex: 0 0 100%;
     max-width: 100%;
-    margin: 10px 0 30px;
+    margin: 20px 0 60px;
     padding: 10px;
   }
   button {
@@ -199,7 +230,6 @@
     background-color: $light_blue_color;
     text-transform: uppercase;
     padding: 20px 20px;
-    border-radius: 2px;
     width: 30%;
     cursor: pointer;
   }

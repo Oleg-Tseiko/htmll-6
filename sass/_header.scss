@@ -4,20 +4,28 @@
     background-color: $orange_color;
     @include change-font(400, $primary_font-size, 26.19px, $white_color, 0.27px);
     text-transform: uppercase;
-    border-radius: 2px;
     padding: 20px 20px;
     width: 30%;
     cursor: pointer;
+    margin-bottom: 80px;
   }
-  .nav-link {
-    @include change-font(400, 16px, 18px, $white_color);
-    text-transform: uppercase;
-    &:hover, &:focus, &:active {
-      background-color: $dark_purple_color;
+.navbar {
+  padding: 20px 1rem 0;
+  .navbar-nav {
+    .nav-link {
+      @include change-font(400, 16px, 18px, $white_color);
+      text-transform: uppercase;
+      padding: 0.5rem 15px;
+      margin: 0 5px;
+      &:hover, &:focus, &:active {
+        background-color: $dark_purple_color;
+        border-radius: 2px;
+      }
     }
   }
+}
   h2 {
     @include change-font(700, 42px, 48.82px, $main_header_font_color);
-    padding: 20px 0;
+    padding: 100px 5% 50px;
   }
 }
