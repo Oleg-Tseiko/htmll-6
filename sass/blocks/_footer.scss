@@ -6,6 +6,7 @@
     @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
     text-transform: uppercase;
     padding: 95px 0 14px;
+    margin: 0 0 0 6px;
   }
   .gray-line {
     background-color: $purple_blue_color;
@@ -46,6 +47,11 @@
     padding: 15px 24px;
     &:nth-child(2) {
       margin-left: auto;
+    }
+    &::-webkit-input-placeholder {
+      background: -webkit-linear-gradient(left, #FFF 0%, #FFF 0%,$red_color 0%, $red_color 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   textarea {

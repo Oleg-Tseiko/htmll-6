@@ -1,0 +1,91 @@
+.portfolio-container {
+  background-color: $yellow_color;
+  padding-bottom: 49px;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $secondary_font_color, $headline_letter_spacing);
+    padding: 95px 0 13px 5px;
+    text-transform: uppercase;
+  }
+  .gray-line {
+    background-color: $dar_yellow_color;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $secondary_font_color, .4px);
+    padding: 10px 23% 13px;
+    span {
+      margin: 0 0 0 4px;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .tabs {
+    padding: 35px 0 70px;
+    a {
+      @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color);
+      padding: 5px 20px 6px;
+      text-transform: uppercase;
+      background-color: $black_color_withtenop;
+      border-radius: 2px;
+      margin: 0 5px 0 6px;
+      &:hover, &:active, &:focus {
+        background-color: $white_color;
+      }
+      &:nth-child(1) {
+        padding: 5px 27px 6px 27px;
+        margin: 0 0 0 8px;
+      }
+      &:nth-child(2) {
+        padding: 5px 22px 6px 22px;
+        margin: 0 0 0 9px;
+      }
+      &:nth-child(3) {
+        padding: 5px 23px 6px 22px;
+        margin: 0 5px 0 9px;
+      }
+      &:nth-child(4) {
+        margin: 0 6px 0 5px;
+      }
+    }
+  }
+  h3 {
+    @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color, $secondary_letter_spacing);
+    padding: 20px 0 60px;
+    text-transform: uppercase;
+  }
+  button {
+    @include change-font(400, $primary_font_size, 26.19px, $white_color, 0.27px);
+    background-color: $light_green_color;
+    text-transform: uppercase;
+    padding: 22px 20px 18px 25px;
+    width: 25.72%;
+    margin: 21px auto 60px;
+    cursor: pointer;
+  }
+  .portfolio_columns {
+    &:nth-child(2n-1) {
+      padding-left: 21px;
+      padding-right: 9px;
+      h3 {
+        padding: 22px 0 60px;
+      }
+    }
+    &:nth-child(2n) {
+      padding: 3px 19px 0 11px;
+      h3 {
+        padding: 20px 5px 60px 0;
+      }
+    }
+    &:nth-child(4n-1) {
+      h3 {
+        padding: 24px 18px 60px 0;
+      }
+    }
+    &:nth-child(4n) {
+      h3 {
+        padding: 20px 0 60px 16px;
+      }
+    }
+  }
+}

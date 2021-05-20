@@ -10,7 +10,11 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'main.scss';
-@import 'header.scss';
-@import 'index.scss';
-@import 'footer.scss';
+@import 'blocks/header.scss';
+@import 'blocks/services.scss';
+@import 'blocks/team.scss';
+@import 'blocks/skills.scss';
+@import 'blocks/portfolio.scss';
+@import 'blocks/comments.scss';
+@import 'blocks/footer.scss';
 @import 'responsive.scss';

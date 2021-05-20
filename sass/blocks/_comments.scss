@@ -1,0 +1,77 @@
+.comments-container {
+  background-color: $pink_color;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
+    text-transform: uppercase;
+    padding: 94px 0 14px 5px;
+  }
+  .gray-line {
+    opacity: 0.15;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $white_color, .44px);
+    padding: 10px 23% 65px;
+  }
+  .comment-holder {
+    .comment-text {
+      @include change-font(400, 21px, 31.2px, $white_color, .73px);
+      font-style: italic;
+      padding: 5px 35px 4px 48px;
+    }
+    h3 {
+      @include change-font(700, 24px, $primary_line_height, $white_color, .5px);
+      padding: 17px 31px 2px 49px;
+      text-transform: uppercase;
+    }
+    p {
+      @include change-font(400, $primary_font_size, $primary_line_height, $yellow_color, $secondary_letter_spacing);
+      padding: 0 31px 10px 49px;
+    }
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+  .comments-column {
+    padding: 0 0 89px 21px;
+    &:nth-child(2n) {
+      padding-left: 39px;
+      h3 {
+        padding: 17px 31px 1px 47px;
+      }
+      .comment-holder {
+        .comment-text {
+          padding: 5px 35px 4px 47px;
+          letter-spacing: 0.73px;
+        }
+        p {
+          letter-spacing: .39px;
+          padding: 0px 31px 10px 48px;
+        }
+      }
+    }
+    &:nth-child(4n-1) {
+      h3 {
+        padding: 18px 31px 2px 49px;
+      }
+    }
+    &:nth-child(4n) {
+      padding-left: 40px;
+      h3 {
+        padding: 17px 31px 1px 44px;
+      }
+      .comment-holder {
+        .comment-text {
+          padding: 5px 15px 6px 45px;
+          letter-spacing: .73px;
+        }
+        p {
+          letter-spacing: 0.5px;
+          padding: 0 31px 10px 45px;
+        }
+      }
+    }
+    &:last-child, &:nth-last-child(2) {
+      padding-bottom: 76px;
+    }
+  }
+}

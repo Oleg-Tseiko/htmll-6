@@ -1,0 +1,45 @@
+.skills-container {
+  background-color: $white_color;
+  padding-bottom: 53px;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $primary_font_color, $headline_letter_spacing);
+    padding: 92px 0 14px 5px;
+    text-transform: uppercase;
+  }
+  .gray-line {
+    background-color: $different_gray;
+  }
+  .under_headline {
+    @include change-font(400, $primary_font_size, $primary_line_height, $primary_font_color, 0.41px);
+    padding: 10px 23% 82px;
+    span {
+      margin: 0 0 0 6px;
+    }
+  }
+  h3 {
+    @include change-font(700, 24px, 18px, $primary_font_color);
+    padding: 25px 0 70px;
+    text-transform: uppercase;
+  }
+  .skills-column {
+    &:nth-child(2n-1) {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+    &:nth-child(3n-1) {
+      padding-right: 0;
+      padding-left: 4px;
+    }
+    &:nth-child(4n-1) {
+      padding-right: 7px;
+      padding-left: 0;
+      h3 {
+        letter-spacing: 0.45px;
+      }
+    }
+    &:nth-child(5n-1) {
+      padding-right: 16px;
+      padding-left: 0;
+    }
+  }
+}
