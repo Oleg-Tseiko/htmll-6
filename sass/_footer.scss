@@ -1,7 +1,77 @@
+/* Contact section */
+.contact-container {
+  background-color: $dark_blue_color;
+  padding-bottom: 116px;
+  h2 {
+    @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
+    text-transform: uppercase;
+    padding: 95px 0 14px;
+  }
+  .gray-line {
+    background-color: #273a71;
+  }
+  .under_headline {
+    padding: 10px 15% 74px;
+    a {
+      @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
+      padding: 10px 0;
+      &:hover, &:focus, &:active {
+        color: $light_blue_color;
+      }
+    }
+  }
+  textarea, input {
+    background-color: $purple_blue_color;
+    @include change-font(400, $primary_font_size, 18px, $white_color);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    &::placeholder {
+      @include change-font(400, $primary_font_size, 18px, $white_color);
+    }
+  }
+  form {
+    position: relative;
+    max-width: 77.4%;
+    margin: 0 auto;
+    img {
+      position: absolute;
+      bottom: 137px;
+      right: 8px;
+    }
+  }
+  input {
+    flex: 0 0 48%;
+    max-width: 48%;
+    padding: 15px 24px;
+    &:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+  textarea {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 200px;
+    margin: 26px 0 59px;
+    padding: 22px 25px;
+    &::-webkit-resizer {
+      display: none;
+    }
+  }
+  button {
+    @include change-font(400, $primary_font_size, 26.19px, $white_color);
+    background-color: $light_blue_color;
+    text-transform: uppercase;
+    padding: 20px 20px 20px 20px;
+    width: 34.2%;
+    cursor: pointer;
+  }
+}
+/* socials */
 .footer-container {
   background-color: $darker_blue_color;
   a {
-    padding: 30px 30px;
+    padding: 33px 28px 33px;
     @include change-font(400, 24px, $headline_line_height, $white_color, $primary_letter_spacing);
     &:hover, &:focus, &:active {
       color: $light_blue_color;
