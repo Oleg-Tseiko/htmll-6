@@ -8,12 +8,12 @@
     padding: 95px 0 14px;
   }
   .gray-line {
-    background-color: #273a71;
+    background-color: $purple_blue_color;
   }
   .under_headline {
-    padding: 10px 15% 74px;
+    padding: 10px 10% 74px;
     a {
-      @include change-font(400, $primary_font_size, $primary_line_height, $white_color, $secondary_letter_spacing);
+      @include change-font(400, $primary_font_size, $primary_line_height, $white_color, .44px);
       padding: 10px 0;
       &:hover, &:focus, &:active {
         color: $light_blue_color;
@@ -62,7 +62,7 @@
     @include change-font(400, $primary_font_size, 26.19px, $white_color);
     background-color: $light_blue_color;
     text-transform: uppercase;
-    padding: 20px 20px 20px 20px;
+    padding: 21px 20px 19px 20px;
     width: 34.2%;
     cursor: pointer;
   }

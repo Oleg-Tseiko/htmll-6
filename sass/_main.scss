@@ -39,9 +39,9 @@ a, button {
   border: none;
 }
 .button_border {
-  border-bottom: 4px solid $black_color_withfifthop;
+  border-bottom: 4px solid $black_color_withop;
   &:hover, &:focus, &:focus-within, &:visited, &:active {
-  border-bottom: 4px solid $black_color_withfifthop;
+  border-bottom: 4px solid $black_color_withop;
   }
 }
 .button_border_radius {

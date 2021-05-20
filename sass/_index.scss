@@ -1,7 +1,7 @@
 /* Services section */
 .services-container {
   background-color: $light_green_color;
-  padding-bottom: 125px;
+  padding-bottom: 126px;
   h2 {
     @include change-font(700, $headline_font_size, $headline_line_height, $white_color, $headline_letter_spacing);
     padding: 95px 0 13px;
@@ -17,55 +17,49 @@
   .services_columns {
     h3 {
       @include change-font(700, 24px, 18px, $white_color, $primary_letter_spacing);
-      padding: 50px 0 22px;
+      padding: 55px 0 22px;
       text-transform: uppercase;
     }
     p {
       @include change-font(300, 16px, 24px, $white_color, $secondary_letter_spacing);
-      padding: 0 25px;
+      padding: 0 35px;
     }
     &:nth-child(1) {
+      padding-left: 15px;
+      padding-right: 0;
       img {
-        margin: 6px 81px 5px;
-      }
-      h3 {
-        padding: 50px 0 22px 13px;
-      }
-      p {
-        padding: 0 10px 0 25px;
+        margin: 6px -11px 0 0;
       }
     }
     &:nth-child(2) {
+      padding-left: 5px;
+      padding-right: 0;
       img {
-        margin: 0 91px 4px;
+        margin: 0 -11px 0 0;
       }
       h3 {
-        padding: 50px 0 22px 5px;
+        padding: 54px 0 22px;
       }
-      p {
-        padding: 0 25px 0 32px;
-      }
+
     }
     &:nth-child(3) {
+      padding-left: 0;
+      padding-right: 5px;
       img {
-        margin: 6px 0 4px -14px;
+        margin: 6px 9px 0 0;
       }
       h3 {
-        padding: 50px 6px 22px 0;
-      }
-      p {
-        padding: 0 28px 0 22px;
+        padding: 53px 0 22px;
       }
     }
     &:nth-child(4) {
+      padding-left: 0;
+      padding-right: 15px;
       img {
-        margin: 3px 0 -2px -21px;
+        margin: 2px 0 1px -6px;
       }
       h3 {
-        padding: 50px 14px 22px 0;
-      }
-      p {
-        padding: 0 37px 0 22px;
+        padding: 48px 0 22px;
       }
     }
   }
@@ -80,7 +74,7 @@
     text-transform: uppercase;
   }
   .gray-line {
-    background-color: #bdd1df;
+    background-color: $gray_color;
     opacity: 0.75;
   }
   .under_headline {
@@ -153,7 +147,7 @@
     text-transform: uppercase;
   }
   .gray-line {
-    background-color: #dfe8ed;
+    background-color: $different_gray;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $primary_font_color, 0.41px);
@@ -196,7 +190,7 @@
     text-transform: uppercase;
   }
   .gray-line {
-    background-color: #e5c37f;
+    background-color: $dar_yellow_color;
   }
   .under_headline {
     @include change-font(400, $primary_font_size, $primary_line_height, $secondary_font_color, $secondary_letter_spacing);
@@ -212,7 +206,7 @@
       @include change-font(400, $primary_font_size, 19.5px, $secondary_font_color);
       padding: 5px 20px 6px;
       text-transform: uppercase;
-      background-color: $black_color_withop;
+      background-color: $black_color_withtenop;
       border-radius: 2px;
       margin: 0 5px 0 6px;
       &:hover, &:active, &:focus {
