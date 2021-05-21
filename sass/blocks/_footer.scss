@@ -49,7 +49,7 @@
       margin-left: auto;
     }
     &::-webkit-input-placeholder {
-      background: -webkit-linear-gradient(left, #FFF 0%, #FFF 0%,$red_color 0%, $red_color 100%);
+      background: -webkit-linear-gradient(left, $white_color 0%, $white_color 0%,$red_color 0%, $red_color 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

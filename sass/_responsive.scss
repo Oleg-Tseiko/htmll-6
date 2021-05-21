@@ -5,14 +5,14 @@
   .contact-container {
     input {
       &::-webkit-input-placeholder {
-        background: -webkit-linear-gradient(left, #FFF 0%, #FFF 23%,$red_color 0%, $red_color 100%);
+        background: -webkit-linear-gradient(left, $white_color 0%, $white_color 23%, $red_color 0%, $red_color 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
     textarea {
       &::-webkit-input-placeholder {
-        background: -webkit-linear-gradient(left, #FFF 0%, #FFF 13.5%,$red_color 0%, $red_color 100%);
+        background: -webkit-linear-gradient(left, $white_color 0%, $white_color 13.5%, $red_color 0%, $red_color 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -166,14 +166,14 @@
   .contact-container {
     input {
       &::-webkit-input-placeholder {
-        background: -webkit-linear-gradient(left, #FFF 0%, #FFF 27%,$red_color 0%, $red_color 100%);
+        background: -webkit-linear-gradient(left, $white_color 0%, $white_color 27%, $red_color 0%, $red_color 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
     textarea {
       &::-webkit-input-placeholder {
-        background: -webkit-linear-gradient(left, #FFF 0%, #FFF 15.5%,$red_color 0%, $red_color 100%);
+        background: -webkit-linear-gradient(left, $white_color 0%, $white_color 15.5%, $red_color 0%, $red_color 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -264,14 +264,14 @@
     .container {
       input {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 38%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 38%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
       }
       textarea {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 21.5%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 21.5%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -381,14 +381,14 @@
     .container {
       input {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 26.5%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 26.5%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
       }
       textarea {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 34.9%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 34.9%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -466,14 +466,14 @@
     .container {
       input {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 31.5%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 31.5%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
       }
       textarea {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 40.9%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 40.9%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -501,14 +501,14 @@
     .container {
       input {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 40%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 40%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
       }
       textarea {
         &::-webkit-input-placeholder {
-          background: -webkit-linear-gradient(left, #FFF 0%, #FFF 49.9%,$red_color 0%, $red_color 100%);
+          background: -webkit-linear-gradient(left, $white_color 0%, $white_color 49.9%, $red_color 0%, $red_color 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
